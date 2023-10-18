@@ -70,11 +70,11 @@ let questions = function(){
 }
 
 let qs = new questions();
-qs.addQuestion('As the troops got deployed, the leader stressed that they should not communicate their location to anyone while the mission was ongoing. Which security function did the leader want to have?','Confidentiality','Integrity','Availability','a','24px');
-qs.addQuestion('One hotel is stressing that the Internet over its WiFi network must be accessible 24 hours a day, seven days a week. Which security pillar is the hotel requiring?','Confidentiality','Integrity','Availability','c','24px');
-qs.addQuestion('At a police checkpoint, the police officer suspected that the vehicle registration papers were fake. Which security function does the officer think is lacking?','Confidentiality','Integrity','Availability','b','24px');
-qs.addQuestion('Two companies are negotiating a certain agreement; however, they want to keep the details of the agreement secret. Which security pillar are they emphasizing?','Confidentiality','Integrity','Availability','a','24px');
-qs.addQuestion('You went to cash out a cheque, and the bank teller made you wait for five minutes as they confirmed the signature of the cheque\'s issuer. Which security function is the bank teller checking?','Confidentiality','Integrity','Availability','b','24px');
-qs.flag('VkVoTmUwTkpRVjlVVWtsQlJIMD0=');
+qs.addQuestion('Als die Truppen eingesetzt wurden, betonte der Anführer, dass sie niemandem ihren Standort mitteilen sollten, solange der Einsatz lief. Welche Sicherheitsfunktion wollte der Anführer haben?','Vertraulichkeit','Integrität','Verfügbarkeit','a','24px');
+qs.addQuestion('Ein Hotel legt Wert darauf, dass das Internet über sein WiFi-Netz 24 Stunden am Tag und sieben Tage die Woche zugänglich sein muss. Welche Sicherheitssäule fordert das Hotel?','Vertraulichkeit','Integrität','Verfügbarkeit','c','24px');
+qs.addQuestion('Bei einer Polizeikontrolle vermutet der Polizeibeamte, dass die Fahrzeugpapiere gefälscht sind. Welche Sicherheitsfunktion fehlt nach Ansicht des Beamten?','Vertraulichkeit','Integrität','Verfügbarkeit','b','24px');
+qs.addQuestion('Zwei Unternehmen verhandeln über eine bestimmte Vereinbarung, deren Einzelheiten sie jedoch geheim halten wollen. Welchen Sicherheitspfeiler betonen sie?','Vertraulichkeit','Integrität','Verfügbarkeit','a','24px');
+qs.addQuestion('Sie wollten einen Scheck einlösen, und der Bankangestellte ließ Sie fünf Minuten warten, um die Unterschrift des Scheckausstellers zu bestätigen. Welche Sicherheitsfunktion prüft der Bankangestellte?','Vertraulichkeit','Integrität','Verfügbarkeit','b','24px');
+qs.flag('U1hRdFFtRnphV056TFVOSlFTMU5ZWE4wWlhJPQ==');
 qs.title('Security Principles')
 qs.setup();
