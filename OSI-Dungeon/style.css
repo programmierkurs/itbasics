@@ -1,0 +1,315 @@
+body {
+    background: #575757;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-top:50px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size:22px;
+    animation: blinker 1s linear infinite;
+    color: #eed105;
+}
+
+span.completed_seconds {
+    animation: blinker 1s linear infinite;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size:18px;
+    animation: blinker 1s linear infinite;
+    color: #FFFFFF;
+}
+
+div.play_button {
+    margin:auto;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color:#FFF;
+    background-color: #F00;
+    border-radius: 5px;
+    width:200px;
+    height:60px;
+    line-height:60px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+div.restart_button {
+    margin:auto;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color:#FFF;
+    background-color: #F00;
+    border-radius: 5px;
+    width:200px;
+    height:60px;
+    line-height:60px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+div.back_button {
+    margin:auto;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color:#FFF;
+    background-color: #F00;
+    border-radius: 5px;
+    width:200px;
+    height:60px;
+    line-height:60px;
+    font-size:22px;
+    cursor:pointer;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+div#game {
+    min-width: 500px;
+    width:510px;
+    margin:auto;
+    border-top:5px solid #575757;
+    border-left:5px solid #575757;
+    border-right:5px solid #575757;
+}
+
+div#game div#character {
+    height: 32px;
+    width: 32px;
+    background-image: url("char.png");
+    background-position: 0px 0px;
+    position: absolute;
+    top: 740px;
+    margin-left: 230px;
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+div#game div.level {
+    height:100px;
+    width:100%;
+    background-color: #2a5a14;
+    background-image: url("wall.png");
+    background-size: 510px 100px;
+    border-bottom:10px solid #575757;
+}
+
+div#game div.level div.sign {
+    font-family: 'Press Start 2P', cursive;
+    position:absolute;
+    color:#FFF;
+    font-size:7px;
+    font-weight: bold;
+    width:84px;
+    padding:2px;
+    margin-left:41px;
+    text-align:center;
+    margin-top:9px;
+}
+
+div#game div.level div.sign-right {
+    margin-left:381px;
+}
+
+div#fallofdoom {
+    position: absolute;
+    z-index: 50;
+    height:760px;
+    width:510px;
+    background-color: #F00;
+    background-image: url("blank_wall.png");
+    background-size: 100px 80px;
+}
+
+div#fallofdoom div.archfall {
+    height:70px;
+    width:54px;
+    background-color: #000;
+    border-top-left-radius: 37px;
+    border-top-right-radius: 37px;
+    background-size:cover;
+    position: absolute;
+    margin-top:30px;
+    margin-left:228px;
+    border-bottom:10px solid #575757;
+}
+
+div.lava {
+    position: absolute;
+    z-index: 200;
+    height:130px;
+    margin-top:635px;
+    width:510px;
+    background: rgb(249,193,59);
+    background: linear-gradient(180deg, rgba(249,193,59,1) 0%, rgba(247,147,63,1) 25%, rgba(226,54,48,1) 50%, rgba(226,54,48,1) 75%, rgba(201,35,50,1) 100%);
+}
+
+div.lava-top {
+    position: absolute;
+    z-index: 50;
+    height:20px;
+    margin-top:615px;
+    width:510px;
+    background-color: #f9c13b;
+    background-size: 100px 80px;
+}
+
+div#thedrop {
+    display: none;
+}
+
+
+div#gamestart {
+    z-index:1000;
+    position: absolute;
+    height: 760px;
+    width:510px;
+    background-color: rgba(0,0,0,0.7);
+    color:#FFF;
+}
+
+div.gameinfo {
+    border:1px solid #000;
+    margin:20px;
+    padding:10px;
+    background-color: #ececec;
+    color:#000;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+
+div#gameover {
+    z-index:1000;
+    display: none;
+    position: absolute;
+    height: 766px;
+    width:510px;
+    background-color: rgba(0,0,0,0.7);
+    color:#FFF;
+}
+
+div#credtispage {
+    z-index:1000;
+    display: none;
+    position: absolute;
+    height: 766px;
+    width:510px;
+    background-color: rgba(0,0,0,0.7);
+    color:#FFF;
+}
+
+div#completed {
+    z-index:1000;
+    display: none;
+    position: absolute;
+    height: 766px;
+    width:510px;
+    background-color: rgba(0,0,0,0.7);
+    color:#FFF;
+}
+
+
+div.logo {
+    width:300px;
+    margin: 10px auto 100px auto;
+}
+
+div.logo div.numbers {
+    font-size:12px;
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+}
+
+div.logo div.numbers1 {
+    margin-left:70px;
+    margin-top:90px;
+    color:#C11111;
+}
+
+div.logo div.numbers2 {
+    margin-left:107px;
+    margin-top:90px;
+    color:#C11111;
+}
+
+div.logo div.numbers3 {
+    margin-left:70px;
+    margin-top:104px;
+}
+
+div.logo div.numbers4 {
+    margin-left: 66px;
+    margin-top: 118px;
+    color:#C11111;
+    font-size:10px;
+}
+
+div.logo div.numbers5 {
+    margin-left: 118px;
+    margin-top: 118px;
+    font-size:10px;
+}
+
+div.logo div.numbers6 {
+    margin-left: 66px;
+    margin-top: 135px;
+    font-size:8px;
+}
+
+div.logo div.numbers7 {
+    margin-left: 108px;
+    margin-top: 130px;
+    font-size:10px;
+    color:#C11111;
+}
+
+div.logo div.numbers8 {
+    margin-left: 90px;
+    margin-top: 145px;
+    font-size:8px;
+    color:#C11111;
+}
+
+div.logo div.words {
+    font-size:35px;
+    margin-left:160px;
+    margin-top:30px;
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+}
+
+div.logo div.words span {
+    color:#C11111;
+}
+
+div.closed-door {
+    background-image:url(door.png);
+    background-size:cover;
+    position:absolute;
+    width:52px;
+    height:60px;
+    margin-left:229px;
+    margin-top:40px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.lava-spec {
+    position: absolute;width: 5px; height:5px; background-color: #ff6703;margin-top:10px;margin-left:40px;
+    transition: 1s;
+}

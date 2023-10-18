@@ -1,0 +1,175 @@
+html,
+body {
+    background-color: #FFF;
+}
+
+div.cell {
+    float: left;
+    border: 3px solid #FFFFFF;
+    margin: 10px;
+}
+
+div.cell img {
+    position: absolute;
+    z-index: 100;
+}
+
+
+div.cell div {
+    font-size: 14px;
+    text-align: center;
+}
+
+div.cell div.device_label {
+    position: relative;
+    z-index: 999;
+}
+
+div.cell div.device_label span {
+    border: 1px solid #ddd;
+    padding: 2px 4px 2px 4px;
+    background-color: #ececec;
+    border-radius: 4px;
+
+}
+
+div.spoof {
+    display: none;
+}
+
+div.line {
+    position: absolute;
+    height: 5px;
+    width: 200px;
+    background-color: #ececec;
+    transform-origin: top left;
+}
+
+div.packet {
+    width: 20px;
+    height: 20px;
+    border-radius: 360px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 150;
+    transition: all 2s;
+}
+
+div.packet {
+    width: 20px;
+    height: 20px;
+    border-radius: 360px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 150;
+}
+
+div.packet_udp {
+    background-color: #ff30b3;
+}
+
+div.packet_arp {
+    background-color: #2b70ff;
+}
+
+div.packet_ping {
+    background-color: #3a7f2b;
+}
+
+div.packet_syn {
+    background-color: #ffef36;
+}
+
+div.packet_synack {
+    background-color: #ffef36;
+}
+
+div.packet_ack {
+    background-color: #ffef36;
+}
+
+div.legend div.legend-body {
+    border: 2px solid #0055AA;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div.legend div.legend-body div {}
+
+div.legend div.legend-body div span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 360px;
+    float: left;
+    margin-right: 10px;
+}
+
+#log {
+    min-height: 200px;
+    max-height: 200px;
+    border: 2px solid #0055AA;
+    font-size: 10px;
+    overflow: auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#log div {
+    padding: 10px;
+    border-bottom: 1px solid #ececec;
+    background-color: #cdecca;
+}
+
+#log div:nth-child(odd) {
+    background-color: #cad6ec;
+}
+
+div.legend-body div.packet-icon {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 5px 0px;
+}
+
+select {
+    /* It looks good for you on mac, but styling doesn't look as good on Chrome */
+    padding: 4px 5px;
+    border-color: #ccc;
+    border-radius: 3px
+}
+
+div.legend {
+    margin-bottom: 15px;
+    width: 260px;
+}
+
+
+div.legend div.legend-header {
+    background-color: #0055aa;
+    color: #FFF;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+div.legend div.legend-body {
+    /* All legend borders use the same color as the header */
+    border: 2px solid #05a;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

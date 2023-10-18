@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+
+html,body {
+    height: 100%;
+    margin:0;
+    padding:0;
+    font-family: Ubuntu, sans-serif;
+}
+
+body{
+    background-color: #6FD6F9;
+    background-image: url("grass.jpg");
+    background-position: bottom;
+    background-repeat:repeat-x;
+}
+
+div.error {
+    display: none;
+    padding-top:100px;
+}
+
+div.error div {
+    width: 400px;
+    margin:auto;
+    border: 3px solid #ff0000;
+    padding:10px;
+    border-radius: 15px;
+    background-color: #e7bdbd;
+    color:#F00;
+    text-align: center;
+}
+
+div.flag {
+    display: none;
+    padding-top:100px;
+}
+
+div.flag div.flag_inner {
+    width: 400px;
+    margin:auto;
+    border: 3px solid #5dfa2f;
+    padding:10px;
+    border-radius: 15px;
+    background-color: #cbf3c1;
+    color: #2b7614;
+    text-align: center;
+}
+
+div.holder {
+    width:675px;height:100%;margin:0 auto 0 auto;
+}
+
+img {
+    height: 300px;
+}
+
+div.bob {
+    position: absolute;
+    bottom:0;
+    margin-left:550px;
+}
+
+div.alice {
+    position: absolute;
+    bottom:0;
+}
+
+
+div.speech-bubble {
+    position: absolute;
+    bottom:300px;
+    margin-left:60px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+div.speech-bubble-right {
+    margin-left:350px;
+}
+
+div.speech-bubble div.main-bubble {
+    height:160px;
+    width:250px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(0,0,0,0.5);
+    padding-top:1px;
+}
+
+div.speech-bubble div.main-bubble div {
+    background-color: #2a5a14;
+    margin:10px;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+    color:#FFF;
+    font-size:14px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+div.speech-bubble div.main-bubble div:hover {
+    background-color: #1f3912;
+    cursor:pointer;
+}
+
+div.little_bubble {
+    margin-top:15px;
+    height:20px;
+    width:65px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+}
+
+div.speech-bubble-right div.little_bubble {
+    margin-left:185px;
+}
+
+div.tiny_bubble {
+    margin-top:15px;
+    height:20px;
+    width:30px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+}
+
+div.speech-bubble-right div.tiny_bubble {
+    margin-left:220px;
+}

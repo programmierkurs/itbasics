@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OSI Knast</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="game">
+        <div id="gamestart">
+            <div class="logo">
+                <div class="numbers numbers1">10</div>
+                <div class="numbers numbers2">10</div>
+                <div class="numbers numbers3">1110</div>
+                <div class="numbers numbers4">0101</div>
+                <div class="numbers numbers5">01</div>
+                <div class="numbers numbers6">01</div>
+                <div class="numbers numbers7">010</div>
+                <div class="numbers numbers8">01</div>
+                <div class="words">
+                    IT<br>
+                    BASICS<br>
+                </div>
+                <img src="cloud.png" height="80">
+            </div>
+            <h1>OSI KNAST</h1>
+            <h2>INSERT COIN</h2>
+            <div class="gameinfo">Du bist im OSI-Knast wegen Verletzung des Netzwerkprotokolls! Dein einziger Ausweg ist
+                über den Pfad des OSI Modells. Navigiere mit den Pfeiltasten (links und rechts) und öffne die Tür mit
+                der Leertaste.</div>
+            <div class="play_button">PLAY</div>
+        </div>
+
+        <div id="gameover">
+            <div class="logo">
+                <div class="numbers numbers1">10</div>
+                <div class="numbers numbers2">10</div>
+                <div class="numbers numbers3">1110</div>
+                <div class="numbers numbers4">0101</div>
+                <div class="numbers numbers5">01</div>
+                <div class="numbers numbers6">01</div>
+                <div class="numbers numbers7">010</div>
+                <div class="numbers numbers8">01</div>
+                <div class="words">
+                    TRY<br>
+                    <span>HACK</span><br>
+                    ME
+                </div>
+                <img src="cloud.png" height="80">
+            </div>
+            <h1>GAME OVER</h1>
+            <div class="gameinfo"></div>
+            <h3>Nicht mogeln</h3>
+            <div class="restart_button">RESTART</div>
+        </div>
+
+
+        <div id="completed">
+            <div class="logo">
+                <div class="numbers numbers1">10</div>
+                <div class="numbers numbers2">10</div>
+                <div class="numbers numbers3">1110</div>
+                <div class="numbers numbers4">0101</div>
+                <div class="numbers numbers5">01</div>
+                <div class="numbers numbers6">01</div>
+                <div class="numbers numbers7">010</div>
+                <div class="numbers numbers8">01</div>
+                <div class="words">
+                    TRY<br>
+                    <span>HACK</span><br>
+                    ME
+                </div>
+                <img src="cloud.png" height="80">
+            </div>
+            <h1>GAME COMPLETE</h1>
+            <div class="gameinfo">
+                <p>Herzlichen Glückwunsch! Du bist frei!</p>
+                <p>Du hast den OSI Knast in <span class="completed_seconds"></span> Sekunden bezwungen</p>
+                <p>Passcode: Salami Pizza</p>
+            </div>
+        </div>
+
+        <div id="thedrop">
+            <div id="fallofdoom">
+                <div class="archfall"></div>
+            </div>
+            <div class="lava-top"></div>
+            <div class="lava"></div>
+        </div>
+
+        <div id="character"></div>
+        <div class="level">
+            <div class="closed-door"></div>
+            <div class="sign sign-left">Application</div>
+            <div class="sign sign-right">Network</div>
+        </div>
+        <div class="level">
+            <div class="closed-door"></div>
+            <div class="sign sign-left">Presentation</div>
+            <div class="sign sign-right">Transport</div>
+        </div>
+        <div class="level">
+            <div class="closed-door"></div>
+            <div class="sign sign-left">Application</div>
+            <div class="sign sign-right">Session</div>
+        </div>
+        <div class="level">
+            <div class="closed-door"></div>
+            <div class="sign sign-left">Transport</div>
+            <div class="sign sign-right">Presentation</div>
+        </div>
+        <div class="level">
+            <div class="closed-door"></div>
+            <div class="sign sign-left">Session</div>
+            <div class="sign sign-right">Network</div>
+        </div>
+        <div class="level">
+            <div class="closed-door"></div>
+            <div class="sign sign-left">Application</div>
+            <div class="sign sign-right">Data Link</div>
+        </div>
+        <div class="level">
+            <div class="closed-door"></div>
+            <div class="sign sign-left">Physical</div>
+            <div class="sign sign-right">Transport</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

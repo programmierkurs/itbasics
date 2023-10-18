@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class=" fdgqvnh idc0_346" lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Network Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thm.css">
+</head>
+
+<body>
+    <div id="holder" style="float: left; width: 528px;">
+        <div style="height: 180px;">
+            <div class="cell" style="height: 150px; width: 150px;" id="box_1_1"><img src="computer.png"
+                    style="height: 100px; width: 100px; margin-left: 25px; margin-top: 25px;">
+                <div class="device_label"><span>computer1</span></div>
+            </div>
+            <div class="cell" style="height: 150px; width: 150px;" id="box_1_2"></div>
+            <div class="cell" style="height: 150px; width: 150px;" id="box_1_3"><img src="computer.png"
+                    style="height: 100px; width: 100px; margin-left: 25px; margin-top: 25px;">
+                <div class="device_label"><span>computer3</span></div>
+            </div>
+        </div>
+        <div style="height: 180px;">
+            <div class="cell" style="height: 150px; width: 150px;" id="box_2_1"><img src="switch.png"
+                    style="height: 100px; width: 100px; margin-left: 25px; margin-top: 25px;">
+                <div class="device_label"><span>switch1</span></div>
+            </div>
+            <div class="cell" style="height: 150px; width: 150px;" id="box_2_2"><img src="router.png"
+                    style="height: 100px; width: 100px; margin-left: 25px; margin-top: 25px;">
+                <div class="device_label"><span>router</span></div>
+            </div>
+            <div class="cell" style="height: 150px; width: 150px;" id="box_2_3"><img src="switch.png"
+                    style="height: 100px; width: 100px; margin-left: 25px; margin-top: 25px;">
+                <div class="device_label"><span>switch2</span></div>
+            </div>
+        </div>
+        <div style="height: 180px;">
+            <div class="cell" style="height: 150px; width: 150px;" id="box_3_1"><img src="computer.png"
+                    style="height: 100px; width: 100px; margin-left: 25px; margin-top: 25px;">
+                <div class="device_label"><span>computer2</span></div>
+            </div>
+            <div class="cell" style="height: 150px; width: 150px;" id="box_3_2"></div>
+            <div class="cell" style="height: 150px; width: 150px;" id="box_3_3"></div>
+        </div>
+        <div class="line" style="width: 176px; top: 283px; left: 273px; transform: rotate(180deg);"></div>
+        <div class="line" style="width: 176px; top: 283px; left: 273px; transform: rotate(0deg);"></div>
+        <div class="line" style="width: 180px; top: 103px; left: 98px; transform: rotate(90deg);"></div>
+        <div class="line" style="width: 180px; top: 283px; left: 98px; transform: rotate(90deg);"></div>
+        <div class="line" style="width: 180px; top: 103px; left: 450px; transform: rotate(90deg);"></div>
+    </div>
+    <div id="menu" style="float: left; width: 260px;">
+        <div class="legend" style="float: none; width: 260px; margin-right: 0px;">
+            <div class="legend-header">Legend</div>
+            <div class="legend-body">
+                <div class="packet-icon"><span style="background-color: red"></span> TCP Packet</div>
+                <div class="packet-icon" style="height: 20px;"><span style="background-color: #ffef36"></span> TCP
+                    Handshake Packet</div>
+                <div class="packet-icon"><span style="background-color: #ff30b3"></span> UDP Packet</div>
+                <div class="packet-icon"><span style="background-color: #2b70ff"></span> ARP Packet</div>
+                <div class="packet-icon"><span style="background-color: #3a7f2b"></span> Ping Packet</div>
+            </div>
+        </div>
+
+        <div class="legend" style="width: 260px; float: none; margin-right: 0px;">
+            <div class="legend-header">Send Packet</div>
+            <div class="legend-body" data-dashlane-rid="2110091195df622e" data-form-type="other">
+                <div class="spoof">From Device:</div>
+                <div class="spoof"><select id="packet_device" style="display:table-cell; width:100%;">
+                        <option value="computer1" selected="selected">computer1</option>
+                        <option value="computer2">computer2</option>
+                        <option value="computer3">computer3</option>
+                    </select></div>
+                <div>From:</div>
+                <div><select id="packet_from" style="display:table-cell; width:100%;"
+                        data-dashlane-rid="c9795bffc2fd16d0" data-form-type="other">
+                        <option value="computer1" selected="selected">computer1</option>
+                        <option value="computer2">computer2</option>
+                        <option value="computer3">computer3</option>
+                    </select></div>
+                <div style="margin-top:10px">To:</div>
+                <div><select id="packet_to" style="display:table-cell; width:100%;" data-dashlane-rid="d051caf6b30603a0"
+                        data-form-type="other">
+                        <option value="computer1" selected="selected">computer1</option>
+                        <option value="computer2">computer2</option>
+                        <option value="computer3">computer3</option>
+                    </select></div>
+                <div style="margin-top:10px">Packet Type:</div>
+                <div>
+                    <select id="packet_type" style="display:table-cell; width:100%;"
+                        data-dashlane-rid="7b7bf4afb6c21601" data-form-type="other">
+                        <option selected="selected">tcp</option>
+                        <option>udp</option>
+                        <option>arp_request</option>
+                        <option>arp_response</option>
+                        <option>ping_request</option>
+                        <option>ping_response</option>
+                    </select>
+                </div>
+                <div style="margin-top:10px">Data:</div>
+                <div><input id="packet_data" style="display: table-cell; max-width: 100%; width: 210px;"
+                        data-dashlane-rid="259cb897307a464e" data-form-type="other"></div>
+                <div><button onclick="send()" style="display:table-cell; width:100%;margin-top:10px"
+                        data-dashlane-rid="0212aee7afa95f4b" data-dashlane-label="true" data-form-type="other">Send
+                        Packet</button></div>
+            </div>
+        </div>
+
+        <div class="legend" style="width: 260px; float: none;">
+            <div class="legend-header">Network Log</div>
+            <div id="log"></div>
+        </div>
+
+    </div>
+    <script src="netsimulator.js"></script>
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('settings') || urlParams.has('config')) {
+            try {
+                let settings = 'x';
+                if (urlParams.has('config')) {
+                    let xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState === 4 && this.status === 200) {
+                            settings = JSON.parse(atob(this.responseText));
+                        }
+                    };
+                    xhttp.open("GET", urlParams.get('config').replace(/([^a-zA-Z0-9])/g, '') + '.config', false);
+                    xhttp.send();
+                } else {
+                    settings = JSON.parse(atob(urlParams.get('settings')));
+                }
+                const ns = new NetSimulator('holder', settings.settings.rows, settings.settings.cols);
+                if (settings.settings.hasOwnProperty('size')) {
+                    ns.setCellSize(settings.settings.size);
+                }
+                if (settings.settings.hasOwnProperty('speed')) {
+                    ns.setPacketSpeed(settings.settings.speed);
+                }
+                if (settings.settings.hasOwnProperty('handshake')) {
+                    ns.doHandshake(settings.settings.handshake);
+                }
+                if (settings.settings.hasOwnProperty('arp')) {
+                    ns.doArp(settings.settings.arp);
+                }
+                if (settings.hasOwnProperty('switches')) {
+                    for (let i in settings.switches) {
+                        settings.switches[i].cell = 'box_' + settings.switches[i].cell;
+                        settings.switches[i].type = 'switch';
+                        ns.addDevice(settings.switches[i]);
+                    }
+                }
+                if (settings.hasOwnProperty('routers')) {
+                    for (let i in settings.routers) {
+                        settings.routers[i].cell = 'box_' + settings.routers[i].cell;
+                        settings.routers[i].type = 'router';
+                        ns.addDevice(settings.routers[i]);
+                    }
+                }
+                if (settings.hasOwnProperty('computers')) {
+                    for (let i in settings.computers) {
+                        settings.computers[i].cell = 'box_' + settings.computers[i].cell;
+                        settings.computers[i].type = 'computer';
+                        ns.addDevice(settings.computers[i]);
+                    }
+                }
+                if (settings.hasOwnProperty('flag')) {
+                    ns.flagConditions(settings.flag);
+                }
+                ns.build();
+
+                function send() {
+
+
+                    ns.packet(document.getElementById('packet_device').value, document.getElementById('packet_from')
+                        .value, document.getElementById('packet_to').value, document.getElementById('packet_type')
+                        .value, document.getElementById('packet_data').value);
+                }
+            } catch (e) {
+                alert('Invalid Settings Code');
+            }
+        } else {
+            alert('Settings Parameter is missing')
+        }
+    </script>
+
+
+
+</body>
+
+</html>

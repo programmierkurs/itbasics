@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+:root {
+    --thmblue: #0a4ca0;
+}
+
+body {
+    font-family: Ubuntu, sans-serif;
+}
+
+input {
+    padding:5px 10px 5px 10px;
+    border: 1px solid #808080;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 1px solid #808080;
+}
+
+input.thm_button  {
+    background-color: var(--thmblue);
+    color:#FFFFFF;
+    border-radius: 3px;
+    border:2px solid var(--thmblue);
+}
+
+
+select {
+    padding:5px 10px 5px 10px;
+    border: 1px solid #808080;
+    border-radius: 3px;
+}
+
+button.thm_button  {
+    background-color: var(--thmblue);
+    color:#FFFFFF;
+    border-radius: 3px;
+    border:2px solid var(--thmblue);
+}
+
+.text-center {
+    text-align: center;
+}

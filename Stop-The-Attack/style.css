@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+
+body {
+    background: #e6e6e6;
+    font-family: Ubuntu, sans-serif;
+    padding:0;
+    margin:0;
+}
+
+div.overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    z-index:100;
+}
+
+
+div.overlay div.msgbox {
+    margin:100px auto;
+    width:500px;
+    border-radius: 5px;
+    padding:10px;
+    text-align: center;
+}
+
+div.overlay div.welcome {
+    background-color: #ececec;
+    border: 3px solid #FFF;
+}
+
+div.overlay div.welcome p strong {
+    color:#F00;
+}
+
+div.overlay div.serverdown {
+    display: none;
+    background-color: #fac8c8;
+    border: 3px solid #f61010;
+}
+
+div.overlay div.serverup {
+    display: none;
+    background-color: #c1efb4;
+    border: 3px solid #5ee829;
+}
+
+h1 {
+    margin:0;
+    padding:10px 0 10px 0;
+    text-align: center;
+}
+
+.app-box {
+    margin:auto auto 30px auto;
+    width:600px;
+}
+
+.app-box .app-box-inner {
+    padding:10px;
+}
+
+button {
+    margin-left:5px;margin-top:5px;
+}
+
+#url {
+    width:430px;line-height:30px;float:left;color:#000;font-size:12px;background-color: #FFF;margin-left:30px;margin-top:5px;border-radius: 10px;text-align:center;
+}
+
+#url img {
+    position: absolute;margin-left:-25px;margin-top:3px;
+}
+
+
+.app-box .app-box-inner .app-header {
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 30px;
+    background-color: #bbc7d1;
+    line-height: 30px;
+}
+
+.app-box .app-box-inner .app-header strong {
+    display:inline;
+    padding-left:10px;
+    color: #848484;
+}
+
+.app-box .app-box-inner .app-header div.buttons {
+    float:left;
+}
+
+.app-box .app-box-inner .app-header div.buttons span {
+    margin-left:10px;
+    margin-top:10px;
+    display: block;
+    float:left;
+    height:16px;
+    width:16px;
+    border-radius: 360px;
+    background-color: #b32b2b;
+}
+
+.app-box .app-box-inner .app-header div.buttons span:nth-child(2) {
+    background-color: #589724;
+}
+
+.app-box .app-box-inner .app-header div.buttons span:nth-child(3) {
+    background-color: #e0bc3b;
+}
+
+.app-box .app-box-inner .app-body {
+    border-left: 1px solid rgb(0 0 0 / 12%);
+    border-bottom: 1px solid rgb(0 0 0 / 12%);
+    border-right: 1px solid rgb(0 0 0 / 12%);
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+@media screen and (max-width: 870px) {
+    button.nav {
+        display: none;
+    }
+}
+
+select {
+    padding: 5px;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 3px;
+}
+button {
+    padding: 6px 8px;
+    background: #8e8e8e; /* Obvs just feel free to change the colors */
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+div.network-box {
+    width:600px;
+    margin:auto;
+}
+
+div.network-box div.device {
+    position: absolute;
+}
+
+div.network-box div.device div {
+    text-align: center;
+    font-size: 14px;
+    background-color: #525252;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 5px;
+}
+
+div.network-box div.hacker {
+
+}
+
+div.network-box div.visitor {
+    margin-top:200px;
+}
+
+div.network-box div.router {
+    margin-top:100px;
+    margin-left:250px;
+}
+
+div.network-box div.router div {
+    position: absolute;width:120px;margin-top:-20px;
+}
+
+div.network-box div.server {
+    margin-top:115px;
+    margin-left:500px;
+}
+
+div.network-box div img {
+    height:100px;
+}
+
+div.line {
+    position: absolute;
+    height:3px;
+    width:190px;
+    border-bottom: 3px dotted #ececec;
+    transform: rotate(40deg);
+    margin-left:80px;
+    margin-top:95px;
+}
+
+div.line2 {
+    position: absolute;
+    height:3px;
+    width:170px;
+    border-bottom: 3px dotted #ececec;
+    transform: rotate(-30deg);
+    margin-left:90px;
+    margin-top:200px;
+}
+
+div.line3 {
+    position: absolute;
+    height:3px;
+    width:120px;
+    border-bottom: 3px dotted #ececec;
+    margin-left:380px;
+    margin-top:155px;
+}
+
+div.line, div.line2, div.line3 { border-bottom: 3px dotted #c1c1c1; }
+
+div.network-box div.server span.bsod {
+    position: absolute;
+    display: block;
+    height:50px;
+    width:73px;
+    background-color:#000;
+    background-size: 73px 50px;
+    margin-top:17px;
+    margin-left:14px;
+    border-radius: 4px;
+    transition: all 20s;
+}
+
+
+div.packet {
+    position: absolute;
+    height: 20px;
+    width:20px;
+    border:1px solid #000;
+    border-radius: 360px;
+    background-color: #F00;
+    transition: all 1s;
+}
+
+div.packet-friendly {
+    background-color: #6fb33c;
+}
+
+table.firewall {
+    width:560px;border-top:1px solid #ececec;border-left:1px solid #ececec;border-right:1px solid #ececec;margin:10px;
+}
+
+th, td { padding: 6px }
+
+table.firewall tr th {
+    text-align: center;
+    border-bottom:1px solid #ececec;
+    padding:0;
+}
+
+table.firewall tr td {
+    text-align: center;
+    border-bottom:1px solid #ececec;
+}
+
+table.firewall tr:nth-child(even){
+    background-color: #caeefe;
+}
+
+table.firewall tr:nth-child(odd){
+    background-color: #fffce7;
+}
+
+table.firewall tr:first-child {
+    background-color: #e1ffd4;
+}
+
+div.battery_gauge {
+    position: absolute;
+    background-image: url("battery-guage.png");
+    background-size: cover;
+    height:70px;
+    width:33px;
+    margin-left:600px;
+    margin-top:123px;
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+div.battery_gauge:hover {
+
+}
+
+div.battery_gauge div {
+    position: absolute;
+    width:16px;
+    height:10px;
+}
+
+div.battery_gauge div.block_1 {
+    display:none;
+    margin-top:14px;
+    margin-left:9px;
+    background-color: #ff0000;
+}
+
+div.battery_gauge div.block_2 {
+    display:none;
+    margin-top:27px;
+    margin-left:9px;
+    background-color: #ff6703;
+}
+
+div.battery_gauge div.block_3 {
+    display:none;
+    margin-top:40px;
+    margin-left:9px;
+    background-color: #ffdc01;
+}
+
+div.battery_gauge div.block_4 {
+    margin-top:53px;
+    margin-left:9px;
+    background-color: #2a5a14;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+

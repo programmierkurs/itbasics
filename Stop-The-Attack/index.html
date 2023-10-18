@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class=" vbpal idc0_346" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Stop The Attack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="thm.css">
+</head>
+<body>
+<div class="overlay">
+  <div class="msgbox serverdown">
+    <p>Oh no! The server went down! Try again!</p>
+    <button class="thm_button startsim">Restart Simulation</button>
+  </div>
+  <div class="msgbox serverup">
+    <p>You saved the server!</p>
+    <p></p>
+  </div>
+  <div class="msgbox welcome">
+    <p>The website at 203.0.110.1 is under attack! Quickly add some firewall rules to stop the server from crashing!</p>
+    <p>The packets in <strong>red</strong> are from the attacker's machine!</p>
+    <button class="thm_button startsim">Start Simulation</button>
+  </div>
+</div>
+
+<div class="app-box">
+  <div class="app-box-inner">
+    <div class="app-header" style="height: 40px">
+      <div class="buttons">
+        <span class="console-button"></span>
+        <span class="console-button"></span>
+        <span class="console-button"></span>
+      </div>
+      <div id="url">http://router/</div>
+    </div>
+    <div class="app-body" style="min-height:200px;padding: 0">
+        <h1>Firewall Rules</h1>
+        <div class="add_rule" style="height:50px">
+        <div style="width:150px;float:left;text-align:center;margin-left:15px">
+          <div>Source IP</div>
+          <select id="firewall_src">
+            <option selected="selected">192.168.1.10</option>
+            <option>8.8.8.8</option>
+            <option>198.51.100.34</option>
+            <option>8.8.4.4</option>
+            <option>203.0.110.1</option>
+            <option>203.0.113.99</option>
+          </select>
+        </div>
+      <div style="width:150px;float:left;text-align:center">
+        <div>Destination IP</div>
+        <select id="firewall_dst">
+          <option selected="selected">192.168.1.10</option>
+          <option>8.8.8.8</option>
+          <option>198.51.100.34</option>
+          <option>8.8.4.4</option>
+          <option>203.0.110.1</option>
+          <option>203.0.113.99</option>
+        </select>
+      </div>
+      <div style="width:75px;float:left;text-align:center">
+        <div>Port</div>
+        <select id="firewall_port" style="width:60px;">
+          <option selected="selected">21</option>
+          <option>22</option>
+          <option>80</option>
+          <option>3306</option>
+          <option>8080</option>
+        </select>
+      </div>
+      <div style="width:75px;float:left;text-align:center">
+        <div>Action</div>
+        <select id="firewall_action">
+          <option selected="selected">DROP</option>
+          <option>PASS</option>
+        </select>
+      </div>
+      <div style="width:100px;float:left;text-align: center">
+        <button id="patch" class="thm_button" style="margin-top:19px;height:29px">Add Rule</button>
+      </div>
+        </div>
+
+      <table class="firewall" cellspacing="1" cellpadding="1" border="0">
+        <tbody><tr>
+          <th>Source IP</th>
+          <th>Destination IP</th>
+          <th>Port</th>
+          <th>Action</th>
+        </tr>
+      </tbody></table>
+    </div>
+  </div>
+</div>
+
+<div class="network-box">
+  <div class="line"></div>
+  <div class="line2"></div>
+  <div class="line3"></div>
+  <div class="device hacker"><img src="computer.png"><div>198.51.100.34</div></div>
+  <div class="device visitor"><img src="computer.png"><div>203.0.113.99</div></div>
+  <div class="device router"><img src="router.png"><div>router</div></div>
+  <div class="device server"><span class="bsod"></span><img src="computer.png"><div>203.0.110.1</div></div>
+  <div class="battery_gauge">
+
+    <div class="block_1"></div>
+    <div class="block_2"></div>
+    <div class="block_3"></div>
+    <div class="block_4"></div>
+
+  </div>
+</div>
+<script src="script.js"></script>
+
+</body></html>

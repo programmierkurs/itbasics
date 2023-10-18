@@ -1,0 +1,47 @@
+.dropbox {
+    margin:14px auto 14px auto;width:150px;height:150px;background-color: #ececec; border-radius: 20px;border:3px dashed #878787;
+}
+
+.dropbox span   {
+    display: block;
+    height:70px;
+    width:70px;
+    margin-top:40px;
+    margin-left:40px;
+    background-color:#FFF;
+    border-radius: 360px;
+    line-height: 70px;
+    text-align:center;
+    font-size:28px;
+    font-weight: bold;
+    color:#ececec;
+    border:1px solid #878787;
+}
+
+body,html {
+    padding:0;
+    margin:0;
+    height:100%;
+}
+#container {
+    float:left;width:350px;background-color:#ececec;border-right:3px dashed #878787;height:100%;overflow: auto
+}
+
+#answers {
+    float:left;width:500px;height:100%;overflow: auto
+}
+
+#container img, #answers img {
+    border-radius: 20px;
+}
+
+#container img {
+    margin-bottom:15px;
+    margin-left:15px;
+}
+
+#container div {
+    margin-top:10px;
+    margin-bottom:15px;
+    text-align:center;
+}
