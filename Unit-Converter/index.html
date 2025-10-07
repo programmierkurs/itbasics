@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maßeinheiten Umrechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="converter">
+        <header>
+            <h1>Maßeinheiten&nbsp;Umrechner</h1>
+            <p>Wähle eine Kategorie und gib den Wert ein, den du umrechnen möchtest.</p>
+        </header>
+
+        <section class="controls">
+            <label class="field">
+                <span>Kategorie</span>
+                <select id="category">
+                    <option value="length">Länge</option>
+                    <option value="weight">Gewicht</option>
+                    <option value="temperature">Temperatur</option>
+                    <option value="volume">Volumen</option>
+                </select>
+            </label>
+
+            <label class="field">
+                <span>Eingabewert</span>
+                <input type="number" id="inputValue" placeholder="0" step="any">
+            </label>
+
+            <div class="field grouped">
+                <label>
+                    <span>Von</span>
+                    <select id="fromUnit"></select>
+                </label>
+                <button id="swap" aria-label="Einheiten tauschen">⇄</button>
+                <label>
+                    <span>Nach</span>
+                    <select id="toUnit"></select>
+                </label>
+            </div>
+
+            <button id="convert">Umrechnen</button>
+        </section>
+
+        <section class="result" aria-live="polite">
+            <h2>Ergebnis</h2>
+            <p id="resultValue">Bitte gib einen Wert ein.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Tipp:</strong> Einige Einheiten erlauben Dezimalzahlen, z.&nbsp;B. 1,75 Meter.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
